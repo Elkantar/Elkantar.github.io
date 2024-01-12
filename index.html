@@ -9,7 +9,7 @@
 <body>
 
     <!-- Autre contenu HTML ici -->
-    truc random
+    random things
     <div id="exportableContent">
         <!-- Votre contenu à exporter ici -->
         <h1>Mon Widget Exportable</h1>
@@ -20,13 +20,16 @@
         // Fonction pour générer le code iframe avec le contenu exportable et une URL dynamique
         function genererCodeIframe() {
             // Récupérer uniquement le contenu de la div exportableContent
-            var contenuExportable = document.getElementById('exportableContent').outerHTML;
+            var contenuExportable = document.getElementById('exportableContent').innerHTML;
 
             // Générer une URL dynamique pour le contenu exportable (vous pouvez ajuster l'URL selon vos besoins)
             var urlExportable = 'https://elkantar.github.io/?content=' + encodeURIComponent(contenuExportable);
 
             // Générer le code iframe avec l'URL dynamique
-            var codeIframe = '<iframe src="' + urlExportable + '" style="width:100%; height:100%; border:none;"></iframe>';
+            var codeIframe = '<iframe src="about:blank" style="width:100%; height:100%; border:none;"></iframe>';
+            
+            // Insérer le contenu exportable dans l'iframe
+            codeIframe = codeIframe.replace('about:blank', urlExportable);
 
             // Afficher le code généré (vous pouvez l'ajuster selon vos besoins)
             alert('Code iframe généré :\n\n' + codeIframe);
