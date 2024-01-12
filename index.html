@@ -31,7 +31,7 @@
             var iframeCode = '<iframe src="data:text/html;charset=utf-8,' + encodeURI('<html><head><title>Exportable Content</title></head><body>' + contenuExportable + '</body></html>') + '" width="100%" height="300px"></iframe>';
 
             // Afficher la balise iframe dans la div iframeContainer
-            document.getElementById('iframeContainer').innerHTML = iframeCode;
+            document.getElementById('iframeContainer').innerText = iframeCode;
         }
     </script>
 
