@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exporter un widget</title>
+    <!-- Inclure les styles CSS -->
+    <style>
+        /* Vos styles pour le widget */
+        .widget {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+            /* Autres styles... */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ma page avec un widget</h1>
+
+    <!-- Contenu de votre page -->
+    <div class="widget">
+        <!-- Votre contenu de widget va ici -->
+        <h2>Mon super widget</h2>
+        <p>Contenu du widget...</p>
+    </div>
+
+    <!-- Section pour l'intégration -->
+    <div class="integration-code">
+        <h2>Exporter ce widget</h2>
+        <textarea id="iframeCode" rows="5" cols="50" readonly></textarea>
+        <button onclick="generateCode()">Générer le code d'intégration</button>
+    </div>
+
+    <script>
+        function generateCode() {
+            // Récupérer le contenu HTML du widget
+            var widgetContent = document.querySelector('.widget').outerHTML;
+
+            // Créer le code d'intégration avec une iframe
+            var iframeCode = '<iframe srcdoc="' + encodeURIComponent(widgetContent) + '" width="300" height="200" frameborder="0"></iframe>';
+
+            // Mettre à jour le contenu du textarea avec le code d'intégration
+            document.getElementById('iframeCode').value = iframeCode;
+        }
+    </script>
+</body>
+</html>
