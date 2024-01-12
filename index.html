@@ -19,8 +19,8 @@
     <script>
         // Fonction pour générer le code iframe avec le contenu exportable et une URL dynamique
         function genererCodeIframe() {
-            // Récupérer le contenu exportable
-            var contenuExportable = document.getElementById('exportableContent').innerHTML;
+            // Récupérer uniquement le contenu de la div exportableContent
+            var contenuExportable = document.getElementById('exportableContent').outerHTML;
 
             // Générer une URL dynamique pour le contenu exportable (vous pouvez ajuster l'URL selon vos besoins)
             var urlExportable = 'https://elkantar.github.io/?content=' + encodeURIComponent(contenuExportable);
