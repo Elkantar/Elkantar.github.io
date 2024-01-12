@@ -17,13 +17,16 @@
     </div>
 
     <script>
-        // Fonction pour générer le code iframe avec le contenu exportable
+        // Fonction pour générer le code iframe avec le contenu exportable et une URL dynamique
         function genererCodeIframe() {
             // Récupérer le contenu exportable
             var contenuExportable = document.getElementById('exportableContent').innerHTML;
 
-            // Générer le code iframe avec le contenu exportable
-            var codeIframe = '<iframe srcdoc="' + contenuExportable + '" style="width:100%; height:100%; border:none;"></iframe>';
+            // Générer une URL dynamique pour le contenu exportable (vous pouvez ajuster l'URL selon vos besoins)
+            var urlExportable = 'https://elkantar.github.io/?content=' + encodeURIComponent(contenuExportable);
+
+            // Générer le code iframe avec l'URL dynamique
+            var codeIframe = '<iframe src="' + urlExportable + '" style="width:100%; height:100%; border:none;"></iframe>';
 
             // Afficher le code généré (vous pouvez l'ajuster selon vos besoins)
             alert('Code iframe généré :\n\n' + codeIframe);
