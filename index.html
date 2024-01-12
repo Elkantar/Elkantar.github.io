@@ -2,31 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exportable Widget</title>
+    <title>Ma Page</title>
 </head>
 <body>
+
+    <!-- Autre contenu HTML ici -->
+
     <div id="exportableContent">
         <!-- Votre contenu à exporter ici -->
         <h1>Mon Widget Exportable</h1>
         <p>Ceci est une partie de ma page que je veux exporter.</p>
     </div>
 
-
     <script>
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Récupérez l'élément à exporter
-    var exportableContent = document.getElementById('exportableContent');
-
-    // Générez le code iframe avec des attributs spécifiques
-    var iframeCode = '<iframe srcdoc="' + exportableContent.innerHTML + '" scrolling="no" frameborder="0" seamless style="width:100%; height:735px; margin: 0 auto 20px auto; border: 0 none; overflow: hidden;" id="iframeExportable"></iframe>';
-
-    // Ajoutez le code iframe à la page
-    document.body.insertAdjacentHTML('beforeend', iframeCode);
-});
-
+        // Fonction pour générer l'URL de l'iframe avec un paramètre spécifique
+        function genererURLExportableContent() {
+            // Construire l'URL avec le paramètre spécifique
+            var url = "https://elkantar.github.io/page-exportable.html";
+            
+            // Ouvrir l'URL dans une nouvelle fenêtre ou onglet
+            window.open(url, '_blank');
+        }
     </script>
-</body>
 
+    <button onclick="genererURLExportableContent()">Générer l'URL</button>
+
+</body>
 </html>
