@@ -9,8 +9,7 @@
 <body>
 
     <!-- Autre contenu HTML ici -->
-    truc randon
-    
+    truc random
     <div id="exportableContent">
         <!-- Votre contenu à exporter ici -->
         <h1>Mon Widget Exportable</h1>
@@ -18,17 +17,21 @@
     </div>
 
     <script>
-        // Fonction pour générer l'URL de l'iframe avec un ancre spécifique
-        function genererURLExportableContent() {
-            // Construire l'URL avec l'ancre spécifique
-            var url = "https://elkantar.github.io/#exportableContent";
-            
-            // Ouvrir l'URL dans une nouvelle fenêtre ou onglet
-            window.open(url, '_blank');
+        // Fonction pour générer une fenêtre avec le contenu exportable
+        function genererFenetreExportable() {
+            // Créer un élément div pour isoler le contenu exportable
+            var divExportable = document.createElement('div');
+            divExportable.innerHTML = document.getElementById('exportableContent').innerHTML;
+
+            // Créer une nouvelle fenêtre ou onglet
+            var nouvelleFenetre = window.open('', '_blank');
+
+            // Ajouter le contenu exportable à la nouvelle fenêtre
+            nouvelleFenetre.document.body.appendChild(divExportable);
         }
     </script>
 
-    <button onclick="genererURLExportableContent()">Générer l'URL</button>
+    <button onclick="genererFenetreExportable()">Générer la fenêtre</button>
 
 </body>
 </html>
