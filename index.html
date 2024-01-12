@@ -9,7 +9,7 @@
 <body>
 
     <!-- Autre contenu HTML ici -->
-    truc random
+
     <div id="exportableContent">
         <!-- Votre contenu à exporter ici -->
         <h1>Mon Widget Exportable</h1>
@@ -17,21 +17,20 @@
     </div>
 
     <script>
-        // Fonction pour générer une fenêtre avec le contenu exportable
-        function genererFenetreExportable() {
-            // Créer un élément div pour isoler le contenu exportable
-            var divExportable = document.createElement('div');
-            divExportable.innerHTML = document.getElementById('exportableContent').innerHTML;
+        // Fonction pour générer le code iframe avec le contenu exportable
+        function genererCodeIframe() {
+            // Récupérer le contenu exportable
+            var contenuExportable = document.getElementById('exportableContent').innerHTML;
 
-            // Créer une nouvelle fenêtre ou onglet
-            var nouvelleFenetre = window.open('', '_blank');
+            // Générer le code iframe avec le contenu exportable
+            var codeIframe = '<iframe srcdoc="' + contenuExportable + '" style="width:100%; height:100%; border:none;"></iframe>';
 
-            // Ajouter le contenu exportable à la nouvelle fenêtre
-            nouvelleFenetre.document.body.appendChild(divExportable);
+            // Afficher le code généré (vous pouvez l'ajuster selon vos besoins)
+            alert('Code iframe généré :\n\n' + codeIframe);
         }
     </script>
 
-    <button onclick="genererFenetreExportable()">Générer la fenêtre</button>
+    <button onclick="genererCodeIframe()">Générer le code iframe</button>
 
 </body>
 </html>
