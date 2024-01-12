@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Exporter un widget</title>
     <!-- Inclure les styles CSS -->
@@ -14,6 +15,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <h1>Ma page avec un widget</h1>
@@ -27,22 +29,28 @@
 
     <!-- Section pour l'intégration -->
     <div class="integration-code">
+
         <h2>Exporter ce widget</h2>
-        <textarea id="iframeCode" rows="5" cols="50" readonly></textarea>
-        <button onclick="generateCode()">Générer le code d'intégration</button>
+        <div id="exportableContent">
+            <textarea id="iframeCode" rows="5" cols="50" readonly></textarea>
+        </div>
+        <!--<button onclick="generateCode()">Générer le code
+                d'intégration</button>-->
     </div>
 
     <script>
-        function generateCode() {
-            // Récupérer le contenu HTML du widget
-            var widgetContent = document.querySelector('.widget').outerHTML;
 
-            // Créer le code d'intégration avec une iframe
-            var iframeCode = '<iframe srcdoc="' + encodeURIComponent(widgetContent) + '" width="300" height="200" frameborder="0"></iframe>';
+        document.addEventListener('DOMContentLoaded', function () {
+            // Récupérez l'élément à exporter
+            var exportableContent = document.getElementById('exportableContent');
 
-            // Mettre à jour le contenu du textarea avec le code d'intégration
-            document.getElementById('iframeCode').value = iframeCode;
-        }
+            // Générez le code iframe
+            var iframeCode = '<iframe srcdoc="' + exportableContent.innerHTML + '" width="100%" height="300px" frameborder="0"></iframe>';
+
+            // Ajoutez le code iframe à la page
+            document.body.insertAdjacentHTML('beforeend', iframeCode);
+        });
     </script>
 </body>
+
 </html>
