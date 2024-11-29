@@ -1,0 +1,136 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Séparer le header du reste du contenu */
+body {
+    margin: 0;
+    /* Évite un espace par défaut */
+    padding: 0;
+}
+
+main {
+    margin-top: 20px;
+    /* Ajoute de l'espace entre le header et le contenu */
+    text-align: center;
+    /* Centre le contenu */
+}
+/* Dropdown menu */
+.dropdownmenu {
+    background-color: #666;
+}
+
+.dropdownmenu,
+.dropdownmenu ul {
+    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdownmenu ul {
+    /* Masquage des sous-menu par defaut */
+    display: none;
+}
+
+.dropdownmenu li {
+    /* Disposition horizontale des elements de menu */
+    display: inline-block;
+
+    /* Positionnement relative des elements de menu pour pouvoir positionner les 
+                     sous-menu correctement en absolu */
+    position: relative;
+}
+
+.dropdownmenu a {
+    /* On transforme les liens en bloc pour pouvoir les dimensionner */
+    display: block;
+
+    /* Dimensions des liens */
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+    padding: 3px 10px;
+
+    text-align: center;
+}
+
+/* avec le > on s'assure de ne pas afficher les sous-listes*/
+.dropdownmenu li:hover>ul {
+    /* Affichage du soumenu au survol */
+    display: block;
+
+    /* Positionnement du sous-menu */
+    position: absolute;
+    top: 36px;
+    /* Hauteur du menu + hauteur du padding top et bottom : 30 + 3 + 3 = 36 */
+    left: 0px;
+    /* Decalage du sous-menu par rapport aux liens du menu*/
+    z-index: 100;
+    /* Gestion de la superposition des sous-menus par rapport au reste de la page */
+}
+
+.dropdownmenu ul a {
+    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher
+    en inline-block comme les liens de menu, ils seront donc verticaux */
+    display: block;
+}
+
+.dropdownsubmenu>a::after {
+    content: "›";
+}
+
+.dropdownsubmenu ul {
+    position: absolute;
+    top: 0px !important;
+    left: 150px !important;
+}
+
+
+
+
+
+/* Gestion des couleurs */
+.dropdownmenu li {
+    background-color: #444;
+    /* Couleur d'arriere-plan du menu */
+}
+
+.dropdownmenu li a {
+    color: #ccc;
+    /* Couleur du texte du menu */
+}
+
+.dropdownmenu li:hover {
+    background-color: #444;
+    /* Couleur d'arriere-plan du menu au survol */
+}
+
+.dropdownmenu li:hover a {
+    color: #fff;
+    /* Couleur du texte du menu au survol */
+}
+
+.dropdownmenu ul li {
+    background-color: #444;
+    /* Couleur d'arriere-plan des sous-menu */
+}
+
+.dropdownmenu ul li:hover {
+    background-color: #444;
+    /* Couleur d'arriere-plan des sous-menu au survol */
+}
+
+.dropdownmenu ul li a {
+    color: #666;
+    /* Couleur du texte des sous-menu */
+}
+
+.dropdownmenu ul li:hover a {
+    color: #f00;
+    /* Couleur du texte des sous-menu au survol */
+}

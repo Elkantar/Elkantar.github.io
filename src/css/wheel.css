@@ -1,0 +1,70 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Séparer le header du reste du contenu */
+body {
+    margin: 0;
+    /* Évite un espace par défaut */
+    padding: 0;
+}
+
+main {
+    margin-top: 20px;
+    /* Ajoute de l'espace entre le header et le contenu */
+    text-align: center;
+    /* Centre le contenu */
+}
+
+#app {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.marker {
+    position: absolute;
+    width: 60px;
+    left: 270px;
+    top: -20px;
+    z-index: 2;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.button {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.blur {
+    animation: blur 10s;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(1.5px);
+    }
+
+    80% {
+        filter: blur(1.5px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
