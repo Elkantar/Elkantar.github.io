@@ -5,13 +5,6 @@ header {
     text-align: center;
 }
 
-/* Séparer le header du reste du contenu */
-body {
-    margin: 0;
-    /* Évite un espace par défaut */
-    padding: 0;
-}
-
 main {
     margin-top: 20px;
     /* Ajoute de l'espace entre le header et le contenu */

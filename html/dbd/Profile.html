@@ -4,7 +4,7 @@
         <title>This is a Title</title>
         <meta charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="../../src\css\style.css" />
-        <link rel="stylesheet" type="text/css" href="../../src\css\card.css" />
+        <link rel="stylesheet" type="text/css" href="../../src\css\Profiles.css" />
     </head>
     <body>
         <header>
@@ -45,12 +45,13 @@
             <script>
                 //onload function to load the killer information depends on the url page
                 window.onload = function () {
-                    useDBDKillerJson(`Killers`)
+                    LoadInformation();
                 }
             </script>
 
-            <div id="Killer_Cards"></div>
+            <div id="Killer_Profile"></div>
 
+            <div id="PerkInformation"></div>
         </main>
 
     </body>
