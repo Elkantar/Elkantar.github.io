@@ -17,6 +17,7 @@ main {
     /* Ajoute de l'espace entre le header et le contenu */
     text-align: center;
     /* Centre le contenu */
+    background-color: #333;
 }
 
 #app {
