@@ -10,6 +10,7 @@ body {
     margin: 0;
     /* Évite un espace par défaut */
     padding: 0;
+    background-color: #333;
 }
 
 main {
@@ -17,7 +18,7 @@ main {
     /* Ajoute de l'espace entre le header et le contenu */
     text-align: center;
     /* Centre le contenu */
-    background-color: #333;
+    
 }
 
 #app {
