@@ -1,0 +1,148 @@
+{
+    "Killer": [
+        {
+            "Name": "The Trapper",
+            "Perks": [
+                "Agitation",
+                "Brutal Strength",
+                "Unnerving Presence"
+            ]
+        },
+        {
+            "Name": "The Wraith",
+            "Perks": [
+                "Bloodhound",
+                "Predator",
+                "Shadowborn"
+            ]
+        },
+        {
+            "Name": "The Hillbilly",
+            "Perks": [
+                "Enduring",
+                "Lightborn",
+                "Tinkerer"
+            ]
+        },
+        {
+            "Name": "The Nurse",
+            "Perks": [
+                "A Nurse's Calling",
+                "Stridor",
+                "Thanatophobia"
+            ]
+        },
+        {
+            "Name": "The Shape",
+            "Perks": [
+                "Dying Light",
+                "Play With Your Food",
+                "Save The Best For Last"
+            ]
+        },
+        {
+            "Name": "The Hag",
+            "Perks": [
+                "Hex: Devour Hope",
+                "Hex: Ruin",
+                "Hex: The Third Seal"
+            ]
+        },
+        {
+            "Name": "The Doctor",
+            "Perks": [
+                "Monitor & Abuse",
+                "Overcharge",
+                "Overwhelming Presence"
+            ]
+        },
+        {
+            "Name": "The Huntress",
+            "Perks": [
+                "Beast of Prey",
+                "Hex: Huntress Lullaby",
+                "Territorial Imperative"
+            ]
+        },
+        {
+            "Name": "The Cannibal",
+            "Perks": [
+                "Barbecue & Chilli",
+                "Franklin's Demise",
+                "Knock Out"
+            ]
+        },
+        {
+            "Name": "The Nightmare",
+            "Perks": [
+                "Fire Up",
+                "Remember Me",
+                "Blood Warden"
+            ]
+        },
+        {
+            "Name": "The Pig",
+            "Perks": [
+                "Hangman's Trick",
+                "Surveillance",
+                "Make Your Choice"
+            ]
+        },
+        {
+            "Name": "The Clown",
+            "Perks": [
+                "Bamboozle",
+                "Coulrophobia",
+                "Pop Goes The Weasel"
+            ]
+        },
+        {
+            "Name": "The Spirit",
+            "Perks": [
+                "Haunting Ground",
+                "Rancor",
+                "Spirit Fury"
+            ]
+        },
+        {
+            "Name": "The Legion",
+            "Perks": [
+                "Discordance",
+                "Mad Grit",
+                "Iron Maiden"
+            ]
+        },
+        {
+            "Name": "The Plague",
+            "Perks": [
+                "Corrupt Intervention",
+                "Infectious Fright",
+                "Dark Devotion"
+            ]
+        },
+        {
+            "Name": "The Ghost Face",
+            "Perks": [
+                "Furtive Chase",
+                "I'm All Ears",
+                "Thrilling Tremors"
+            ]
+        },
+        {
+            "Name": "The Demogorgon",
+            "Perks": [
+                "Cruel Limits",
+                "Mindbreaker",
+                "Surge"
+            ]
+        },
+        {
+            "Name": "The Oni",
+            "Perks": [
+                "Nemesis",
+                "Zanshin Tactics",
+                "Blood Echo"
+            ]
+        }
+    ]
+}

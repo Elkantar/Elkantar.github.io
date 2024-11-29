@@ -1,0 +1,56 @@
+{
+    "Perks" :[
+        {
+            "Name": "Agitation",
+            "Description": "You get excited in anticipation of hooking your prey. Increases your speed while transporting bodies by 6/12/18 %."
+        },
+        {
+            "Name": "Brutal Strength",
+            "Description": "Your great strength allows you to shred through your prey's defenses. Destroy dropped Pallets 10/15/20 % faster."
+        },
+        {
+            "Name": "Unnerving Presence",
+            "Description": "Your presence alone instills great fear. Survivors within your Terror Radius have a 10/15/20 % greater chance of triggering Skill Checks when repairing, healing or sabotaging."
+        },
+        {
+            "Name": "Bloodhound",
+            "Description": "Like a hunting scent hound, you smell traces of blood at a great distance. Fresh Blood Stains are considerably more discernible than normal and can be tracked for 2/3/4 seconds longer than normal."
+        },
+        {
+            "Name": "Predator",
+            "Description": "Your acute tracking ability allows you to hone in on disturbances left by running Survivors. Scratch Marks left by Survivors will spawn slightly/moderately/considerably closer to one another."
+        },
+        {
+            "Name": "Shadowborn",
+            "Description": "You have a keen vision in the darkness of the night. Your Field of View is 5/10/15 degrees wider than normal."
+        },
+        {
+            "Name": "Enduring",
+            "Description": "You are resilient to pain. You reduce the duration of Pallet Stuns by 40/45/50 %."
+        },
+        {
+            "Name": "Lightborn",
+            "Description": "Your powerful hold on the Survivors causes escapes to be nearly impossible. The duration of blindness caused by Flashlights is reduced by 20/40/60 %."
+        },
+        {
+            "Name": "Tinkerer",
+            "Description": "When a Generator is repaired to 70 %, you receive a Loud Noise notification and you are granted the Undetectable status effect for 12/14/16 seconds."
+        },
+        {
+            "Name": "A Nurse's Calling",
+            "Description": "Unlocks potential in one's Aura-reading ability. The Auras of Survivors who are healing or being healed are revealed to you when they are within a range of 20/24/28 meters."
+        },
+        {
+            "Name": "Stridor",
+            "Description": "The sounds of pain are music to your ears. 50/75/100 % more noise made by Survivors when they are breathing."
+        },
+        {
+            "Name": "Thanatophobia",
+            "Description": "Those who are injured, dying or hooked make others suffer. For each Injured, Dying or hooked Survivor, all Survivors receive a stack-able penalty of 4/5/6 % to their Repair, Healing and Sabotage speed up to a maximum of 20/25/30 %."
+        },
+        {
+            "Name": "Dying Light",
+            "Description": "You become obsessed with one Survivor. Each time you hook a Survivor other than your Obsession, gain a Token. For each Token, you receive a stack-able 3/3.5/4 % decrease in your Terror Radius when not in a chase up to a maximum of 12/14/16 %."
+        }
+    ]
+}

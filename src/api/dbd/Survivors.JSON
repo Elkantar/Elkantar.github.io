@@ -1,0 +1,132 @@
+{
+    "survivors": [
+        {
+            "name": "Dwight Fairfield",
+            "perks": [
+                "Bond",
+                "Prove Thyself",
+                "Leader"
+            ]
+        },
+        {
+            "name": "Meg Thomas",
+            "perks": [
+                "Quick & Quiet",
+                "Sprint Burst",
+                "Adrenaline"
+            ]
+        },
+        {
+            "name": "Claudette Morel",
+            "perks": [
+                "Empathy",
+                "Botany Knowledge",
+                "Self-Care"
+            ]
+        },
+        {
+            "name": "Jake Park",
+            "perks": [
+                "Iron Will",
+                "Calm Spirit",
+                "Saboteur"
+            ]
+        },
+        {
+            "name": "Nea Karlsson",
+            "perks": [
+                "Balanced Landing",
+                "Urban Evasion",
+                "Streetwise"
+            ]
+        },
+        {
+            "name": "Laurie Strode",
+            "perks": [
+                "Sole Survivor",
+                "Object of Obsession",
+                "Decisive Strike"
+            ]
+        },
+        {
+            "name": "Ace Visconti",
+            "perks": [
+                "Open-Handed",
+                "Up the Ante",
+                "Ace in the Hole"
+            ]
+        },
+        {
+            "name": "Bill Overbeck",
+            "perks": [
+                "Left Behind",
+                "Borrowed Time",
+                "Unbreakable"
+            ]
+        },
+        {
+            "name": "Feng Min",
+            "perks": [
+                "Technician",
+                "Lithe",
+                "Alert"
+            ]
+        },
+        {
+            "name": "David King",
+            "perks": [
+                "We're Gonna Live Forever",
+                "Dead Hard",
+                "No Mither"
+            ]
+        },
+        {
+            "name": "Quentin Smith",
+            "perks": [
+                "Wake Up!",
+                "Pharmacy",
+                "Vigil"
+            ]
+        },
+        {
+            "name": "David Tapp",
+            "perks": [
+                "Tenacity",
+                "Detective's Hunch",
+                "Stake Out"
+            ]
+        },
+        {
+            "name": "Kate Denson",
+            "perks": [
+                "Dance With Me",
+                "Windows of Opportunity",
+                "Boil Over"
+            ]
+        },
+        {
+            "name": "Adam Francis",
+            "perks": [
+                "Diversion",
+                "Deliverance",
+                "Autodidact"
+            ]
+        },
+        {
+            "name": "Jeff Johansen",
+            "perks": [
+                "Breakdown",
+                "Aftercare",
+                "Distortion"
+            ]
+        },
+        {
+            "name": "Jane Romero",
+            "perks": [
+                "Solidarity",
+                "Poised",
+                "Head On"
+            ]
+        }
+    ]
+}
