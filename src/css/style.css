@@ -18,6 +18,20 @@ main {
     text-align: center;
     /* Centre le contenu */
 }
+
+footer {
+    background-color: #222;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    /*le fixé en bas de la page*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
 /* Dropdown menu */
 .dropdownmenu {
     background-color: #666;
