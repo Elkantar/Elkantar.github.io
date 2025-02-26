@@ -39,7 +39,9 @@ function CreateKillerCard(data, increment) {
 
     const cardImage = document.createElement("img");
     cardImage.id = "cardImage";
-    cardImage.src = `../../src/img/Killers/${data.Name}.png`;
+    KillerNameImage = data.Name.replace(/ /g, "_");
+    //console.log(KillerName)
+    cardImage.src = `../../src/img/dbd/killers/${KillerNameImage}.png`;
 
     const cardBack = document.createElement("div");
     cardBack.id = "Back_Card";
@@ -67,8 +69,8 @@ function CreateKillerCard(data, increment) {
     Profile.onclick = function() {
         //remplacer l'espace dans le nom du tueur par un underscore
         //pour éviter les problèmes de chemin
-        var killerName = data.Name.replace(/ /g, "_");
-        window.location.href = `../../html/dbd/Profile.html?killer=${killerName}`;
+        var KillerName = data.Name.replace(/ /g, "_");
+        window.location.href = `../../html/dbd/Profile.html?killer=${KillerName}`;
     }
 
 
@@ -121,8 +123,9 @@ function CreateKillerProfile(data) {
     Name.textContent = data.Name;
 
     const Image = document.createElement("img");
+    KillerNameImage = data.Name.replace(/ /g, "_");
     Image.id = "Image";
-    Image.src = `../../src/img/Killers/${data.Name}.png`;
+    Image.src = `../../src/img/dbd/killers/${KillerNameImage}.png`;
 
     const Perks = document.createElement("div");
     Perks.id = "Perks";
@@ -171,8 +174,9 @@ function CreatePerkCard(data) {
     Name.textContent = data.Name;
 
     /*const Image = document.createElement("img");
+    KillerNameImage = data.Name.replace(/ /g, "_");
     Image.id = "Image";
-    Image.src = `../../src/img/Perks/${data.Name}.png`;*/
+    Image.src = `../../src/img/Perks/${KillerNameImage}.png`;*/
 
     const Description = document.createElement("div");
     Description.id = "Description";
