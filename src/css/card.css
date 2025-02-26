@@ -38,7 +38,7 @@ body {
 
 /* Front side */
 .flip-card-front {
-    background-color: #fff;
+    background-color: #333;
 }
 
 #cardImage {
@@ -50,7 +50,7 @@ body {
 
 /* Back side */
 .flip-card-back {
-    background-color: #007BFF;
+    background-color: #e63946;;
     color: white;
     transform: rotateY(180deg);
     text-align: center;
@@ -74,7 +74,7 @@ body {
     border: none;
     border-radius: 5px;
     background-color: white;
-    color: #007BFF;
+    color: #e63946;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
