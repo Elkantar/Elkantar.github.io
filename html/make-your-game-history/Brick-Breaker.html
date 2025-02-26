@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" id="bodyh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Casse Brique</title>
+    <link rel="stylesheet" href="asset/main.css" />
+    <link rel="stylesheet" href="../../src/css/style.css" />
+</head>
+<header>
+    <ul class="dropdownmenu">
+        
+        <li><a>Dead By Daylight</a>
+            <ul>
+                <li class="dropdownsubmenu"><a>Survivors</a>
+                    <ul>
+                        <li><a href="../WIP.html">All Perks</a></li>
+                        <li><a href="../WIP.html">Survivor own Perks</a></li>
+                    </ul>
+                    <li class="dropdownsubmenu"><a>Killers</a>
+                        <ul>
+                            <li><a href="html/WIP.html">All Perks</a></li>
+                            <li><a href="html/WIP.html">Killers own Perks</a></li>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+        </li>
+        <li><a href="../../">Accueil</a></li>
+        <li><a>Yu-Gi-Oh</a>
+            <ul>
+                <li><a href="../ygo/wheel.html">Wheel</a></li>
+                <li><a href="../ygo/Decklists.html">Decklists</a></li>
+            </ul>
+        </li>
+        <li><a href="../make-your-game-history/Brick-Breaker.html">Brick Break</a></li>
+    </ul>
+</header>
+<body id="body">
+    <div id="firstDialog">
+        <h1 id="title">casse-brique </h1> <br>
+        <p>Bienvenue dans le monde de Bricktopia,</p>
+        <p>où la seule chose qui vous sépare de la liberté </p>
+        <p>une brique. Votre mission, si vous l'acceptez, est de vaincre ce petit morceau </p>
+        <p>de céramique rouge qui dirige d'une main de fer sur le monde de Bricktopia.</p>
+        <p>Vous devrez vous frayer un chemin à travers des niveaux de plus en plus difficiles.</p>
+        <p>Mais attention, la brique rouge n'est pas aussi stupide qu'elle en a l'air, alors soyez prêt à tout moment.</p>
+        <p>Bonne chance, si vous en avez besoin.</p>
+
+        <button id="play-again2" onclick="hideFirstDialog()">Start !</button>
+    </div>
+    <script>
+        var firstDialog = document.getElementById("firstDialog")
+        //var playAgain2 = document.getElementById("play-again2")
+        let jeu = document.getElementById("game")
+
+        function showFirstDialog() {
+            firstDialog.style.display = "block";
+        }
+
+        function hideFirstDialog() {
+            firstDialog.style.display = "none";
+            end2 = !end2
+            // startGame2()
+        }
+         //playAgain2.addEventListener("click", hideFirstDialog);
+    </script>
+    <div id="boss-defeated" style="display: none;">
+
+        <h1>Boss Defeated!</h1>
+
+        <br><br><br><br><br><br>
+        <p>Vous avez réussi à mettre fin à mon règne de terreur?<br>
+            Wow, je suis vraiment impressionné. Je dois admettre,<br>
+            je ne m'attendais pas à être vaincu par quelqu'un <br>
+            d'aussi ordinaire que vous. Cependant tout ce que<br>
+            vous avez fait c'est de me donner une pause bien méritée.<br>
+            Je vais maintenant profiter de ma retraite anticipée.</p>
+        <button id="play-again">Resume</button>
+    </div>
+
+    <script>
+        var bossDefeated = document.getElementById("boss-defeated");
+        var playAgain = document.getElementById("play-again");
+
+        function showDefeatScene() {
+            bossDefeated.style.display = "block";
+        }
+
+        function hideDefeatScene() {
+            bossDefeated.style.display = "none";
+            startGame2()
+        }
+
+        playAgain.addEventListener("click", hideDefeatScene);
+
+
+        // when the boss is defeated, call the showDefeatScene() function
+        // for example:
+
+        if (boss.health <= 0) {
+            showDefeatScene();
+        }
+    </script>
+
+    <div id="game">
+
+        <div id="content">
+            <div id="alltexts">
+                <div id="text">
+                    <p id="timer">Time : 0</p> <br>
+                    <p id="score">Score : 0</p><br>
+                    <p id="life">Life : 0</p><br>
+                    <p id="life2">"²" = menu</p><br>
+                    <p id="funcdarkmode">"j" = Jour/Nuit</p>
+
+                </div>
+            </div>
+            <div id="container">
+                <div id="paddle"></div>
+                <div id="ball" class="balls"></div>
+
+            </div>
+            <div id="fillspace">
+                <input id="DM" name="DM" type="button" onclick="darkmode()" value="Mode Sombre">
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div id="menu">
+        <span id="menu-text"></span>
+        <br>
+        <br>
+    </div>
+
+    <script src="src/init.js"></script>
+    <script src="src/map.js"></script>
+    <script src="src/startPause.js"></script>
+    <script src="src/createbrick.js"></script>
+    <script src="src/collision.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/darkmode.js"></script>
+
+</body>
+
+</html>

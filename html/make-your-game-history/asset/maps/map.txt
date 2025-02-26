@@ -1,0 +1,64 @@
+ [
+        ' a a u',
+        '      ',
+        '      ',
+        '   b  ',
+        '      ',
+        'a aaaa'
+    ],
+    [
+        'aaaaaa',
+        ' a  a ',
+        '  aa  ',
+        '  aa  ',
+        ' a  a ',
+        'aaaaaa'
+    ],
+    [
+        'aaaaaa',
+        'a    a',
+        'aa  aa',
+        'aa  aa',
+        'a    a',
+        'aaaaaa'
+    ],
+    [
+        ' auua ',
+        'aa  aa',
+        'a    a',
+        'a    a',
+        'aa  aa',
+        ' uaau '
+    ],
+    [
+        '  auaa',
+        ' aa aa',
+        'aa  aa',
+        '    aa',
+        '    aa',
+        '    aa'
+    ],
+    [
+        'aaaa u',
+        'ab a  ',
+        'a  a  ',
+        'aaaa u',
+        '      ',
+        'u  u  '
+    ],
+    [
+        'aaa   ',
+        'a aa a',
+        '   a a',
+        'a aaaa',
+        'aaaa a',
+        'aaaa a'
+    ],
+    [
+        'aaaaaa',
+        'aaaaaa',
+        'aaaaaa',
+        'aaaaaa',
+        'aaaaaa',
+        'aaaaaa'
+    ]
