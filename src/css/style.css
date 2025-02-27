@@ -50,6 +50,8 @@ footer {
     /* Positionnement relative des elements de menu pour pouvoir positionner les 
                      sous-menu correctement en absolu */
     position: relative;
+
+    z-index: 150;
 }
 
 .dropdownmenu a {
